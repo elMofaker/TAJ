@@ -1,15 +1,26 @@
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+.blue{
+    color: #273b92;
+}
+
+.black{
+    color: black;
+}
+
 body {
     width: 100%;
     height: 1000vh;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
 }
 
-.center{
+.center {
     justify-content: center;
     align-items: center;
     display: flex;
@@ -134,9 +145,10 @@ nav ul li {
     font-weight: bold;
     font-size: 45px;
 }
+
 @media (max-width: 575px) {
 
-    .carousel-caption h5{
+    .carousel-caption h5 {
         font-size: 30px;
     }
 
@@ -211,16 +223,16 @@ nav ul li {
 /* end home */
 /* start about */
 
-.main-title h2{
+.main-title h2 {
     font-size: 50px;
     font-weight: bold;
 }
 
-.main-title .dlle{
+.main-title .dlle {
     justify-content: start;
 }
 
-.main-title span{
+.main-title span {
     font-size: 55px;
     font-weight: 900;
     background-color: #273b92;
@@ -232,13 +244,14 @@ nav ul li {
     align-items: center;
     letter-spacing: 7px;
 }
-@media (max-width: 767px){
 
-    .main-title h2{
+@media (max-width: 767px) {
+
+    .main-title h2 {
         text-align: center;
     }
 
-    .main-title .dlle{
+    .main-title .dlle {
         justify-content: center;
     }
 
@@ -250,27 +263,29 @@ nav ul li {
         font-size: 40px;
     }
 
-    .main-title h2{
+    .main-title h2 {
         font-size: 40px;
     }
-    
+
 
 }
+
 @media (max-width: 445px) {
 
     .main-title span {
         font-size: 35px;
     }
 
-    .main-title h2{
+    .main-title h2 {
         font-size: 35px;
     }
-    
+
 
 }
 
-.about p{
-    font-size: 20px;
+.about p {
+    color: black;
+    font-weight: 500;
 }
 
 
@@ -278,35 +293,40 @@ nav ul li {
 
 /* start approach */
 
-.approach{
+.approach {
     background-color: #f9f9f9;
     text-transform: uppercase;
 }
 
-.text-main{
+.text-main {
     border-left: 4px solid #273b92;
     padding-left: 15px;
 }
 
-.text-main h3{
+.text-main h3 {
     font-size: 1.3rem;
+    font-weight: bold;  
 }
 
-.approach .card{
+.approach .card {
     background-color: transparent;
 }
 
-.approach .card img{
+.approach .card h3 {
+    font-weight: bold;
+}
+
+.approach .card img {
     width: 3rem;
 }
 
-.approach .card hr{
+.approach .card hr {
     width: 11%;
     border-top: 5px solid #273b92;
     opacity: 1;
 }
 
-.approach .card .borr{
+.approach .card .borr {
     border-top: 5px solid #c1c0be;
 }
 
