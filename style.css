@@ -306,4 +306,8 @@ nav ul li {
     opacity: 1;
 }
 
+.approach .card .borr{
+    border-top: 5px solid #c1c0be;
+}
+
 /* end approach */
