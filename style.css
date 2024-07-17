@@ -1,0 +1,309 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 1000vh;
+}
+
+.center{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+ul {
+    list-style: none;
+}
+
+
+a {
+    text-decoration: none;
+}
+
+/* start nav */
+
+
+nav {
+    background-color: rgba(0, 0, 0, 0.411);
+    backdrop-filter: blur(4px);
+    position: fixed;
+    z-index: 1000;
+}
+
+.navbar-toggler {
+    border: none;
+}
+
+
+.icon-nav {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background-image: url('img/f0d92e1487bc41b6de713af62c497c3e.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    transition: transform 0.3s ease;
+    transform: rotate(-90deg);
+}
+
+.navbar-toggler.collapsed .icon-nav {
+    transform: rotate(-180deg);
+}
+
+nav ul {
+    gap: 1.5rem;
+}
+
+nav ul li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-link {
+    font-size: 17px;
+    color: white;
+    font-weight: 700;
+}
+
+@media (max-width:992px) {
+    .navbar-brand {
+        display: flex;
+    }
+
+    .logo {
+        display: none;
+    }
+
+    nav ul {
+        backdrop-filter: blur(5px);
+        border-radius: 20px;
+        margin-top: 10px;
+        padding: 20px;
+        background-color: rgba(0, 0, 0, 0.659);
+    }
+}
+
+@media (min-width:992px) {
+    .navbar-brand {
+        display: none;
+    }
+
+    .logo {
+        display: flex;
+    }
+}
+
+
+@media (max-width: 1200px) {
+    nav ul {
+        gap: .5rem;
+    }
+
+    .nav-link {
+        font-size: 15px;
+    }
+}
+
+/* end nav */
+
+/* start home */
+.home {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+.carousel-caption {
+    bottom: 32%;
+    z-index: 3;
+    text-align: start;
+}
+
+.carousel-item {
+    height: 100vh;
+    min-height: 300px;
+}
+
+.carousel-caption h5 {
+    color: aliceblue;
+    font-weight: bold;
+    font-size: 45px;
+}
+@media (max-width: 575px) {
+
+    .carousel-caption h5{
+        font-size: 30px;
+    }
+
+}
+
+.btn-slid-main {
+    padding: 15px;
+    background-color: #273b92;
+    color: white;
+    width: 13rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.btn-slid-main h4 {
+    font-size: 17px;
+    margin: 0;
+}
+
+.btn-slid-main h4 img {
+    margin-top: -4px;
+    transform: rotate(90deg)
+}
+
+.carousel-indicators {
+    width: 100%;
+    height: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.btn-slid {
+    border-radius: 50%;
+    z-index: 3;
+    width: 10px;
+}
+
+.mastir-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    border: 1px solid rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
+    padding: 10px;
+}
+
+.carousel-inner::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: linear-gradient(to bottom, rgba(0, 0, 111, 0.534), transparent);
+    z-index: 1;
+}
+
+@media (max-width: 992px) {
+
+    .carousel-caption,
+    .home .btn-slid-main {
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+
+}
+
+/* end home */
+/* start about */
+
+.main-title h2{
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.main-title .dlle{
+    justify-content: start;
+}
+
+.main-title span{
+    font-size: 55px;
+    font-weight: 900;
+    background-color: #273b92;
+    padding: 0;
+    color: white;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 7px;
+}
+@media (max-width: 767px){
+
+    .main-title h2{
+        text-align: center;
+    }
+
+    .main-title .dlle{
+        justify-content: center;
+    }
+
+}
+
+@media (max-width: 445px) {
+
+    .main-title span {
+        font-size: 40px;
+    }
+
+    .main-title h2{
+        font-size: 40px;
+    }
+    
+
+}
+@media (max-width: 445px) {
+
+    .main-title span {
+        font-size: 35px;
+    }
+
+    .main-title h2{
+        font-size: 35px;
+    }
+    
+
+}
+
+.about p{
+    font-size: 20px;
+}
+
+
+/* end about */
+
+/* start approach */
+
+.approach{
+    background-color: #f9f9f9;
+    text-transform: uppercase;
+}
+
+.text-main{
+    border-left: 4px solid #273b92;
+    padding-left: 15px;
+}
+
+.text-main h3{
+    font-size: 1.3rem;
+}
+
+.approach .card{
+    background-color: transparent;
+}
+
+.approach .card img{
+    width: 3rem;
+}
+
+.approach .card hr{
+    width: 11%;
+    border-top: 5px solid #273b92;
+    opacity: 1;
+}
+
+/* end approach */
