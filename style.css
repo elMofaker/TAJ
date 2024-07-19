@@ -273,27 +273,13 @@ nav ul li {
 
 @media (max-width: 445px) {
 
-    .main-title span {
-        font-size: 40px;
-    }
-
-    .main-title h2 {
-        font-size: 40px;
-    }
-
-
-}
-
-@media (max-width: 445px) {
-
-    .main-title span {
+    .about .main-title span {
         font-size: 35px;
     }
 
-    .main-title h2 {
+    .about .main-title h2 {
         font-size: 35px;
     }
-
 
 }
 
@@ -362,7 +348,6 @@ nav ul li {
 @media (max-width:767px) {
     .services hr {
         width: 25%;
-
     }
 }
 
@@ -414,8 +399,6 @@ nav ul li {
         width: 20rem;
     }
 }
-
-
 
 .services .navigation-buttons {
     position: absolute;
@@ -517,7 +500,99 @@ nav ul li {
     border: 0;
 }
 
+.soft-services .main-title h2 {
+    font-size: 50px;
+    font-weight: bold;
+    letter-spacing: 15px;
+}
 
+.soft-services .main-title .dlle {
+    justify-content: start;
+}
+
+.soft-services .main-title span {
+    font-size: 55px;
+    font-weight: 900;
+    background-color: #273b92;
+    padding: 0;
+    color: white;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 0px;
+}
+
+@media (max-width: 400px) {
+
+    .soft-services .main-title h2 {
+        font-size: 33px;
+        letter-spacing: 0px;
+    }
+
+    .soft-services .main-title span {
+        font-size: 23px;
+    }
+
+    .soft-services .main-title .dlle {
+        justify-content: center;
+        text-align: center;
+    }
+
+}
+
+@media (max-width: 527px) and (min-width:400px) {
+
+    .soft-services .main-title h2 {
+        font-size: 35px;
+        letter-spacing: 4px;
+    }
+    .soft-services .main-title span {
+        font-size: 30px;
+    }
+    .soft-services .main-title .dlle {
+        justify-content: center;
+        text-align: center;
+    }
+
+}
+
+@media (max-width: 767px) and (min-width:526px) {
+
+    .soft-services .main-title h2 {
+        font-size: 37px;
+        letter-spacing: 5px;
+    }
+
+    .soft-services .main-title span {
+        font-size: 33px;
+    }
+
+    .soft-services .main-title .dlle {
+        justify-content: center;
+        text-align: center;
+    }
+
+}
+
+@media (max-width: 992px) and (min-width:766px) {
+
+    .soft-services .main-title h2 {
+        font-size: 45px;
+        letter-spacing: 7px;
+        
+    }
+
+    .soft-services .main-title span {
+        font-size: 40px;
+    }
+
+    .soft-services .main-title .dlle {
+        justify-content: center;
+        text-align: center;
+    }
+    
+}
 
 /* end soft-services */
 /* strat our-projects */
@@ -541,60 +616,60 @@ nav ul li {
 .container {
     position: relative;
 }
-.our-projects p{
+
+.our-projects p {
     color: rgb(218, 206, 206);
     font-weight: 500;
     font-size: 12px;
 }
 
-
-
-.our-projects .btn-slid-main{
+.our-projects .btn-slid-main {
     position: absolute;
     bottom: 0;
 }
 
-.our-projects .in-card{
+.our-projects .in-card {
     width: 50rem;
 }
 
-.our-projects .in-card:last-child{
+.our-projects .in-card:last-child {
     margin-top: 50px;
 }
 
-.our-projects .in-card .des{
+.our-projects .in-card .des {
     display: flex;
 }
-.de{
+
+.de {
     position: relative;
     bottom: -100px;
 }
 
 @media (max-width:992px) {
-    .our-projects .in-card .des{
+    .our-projects .in-card .des {
         display: block;
     }
 
-    .our-projects .in-card{
+    .our-projects .in-card {
         width: 24rem;
     }
-    .de{
+
+    .de {
         bottom: 0px;
     }
-    .our-projects .ed{
+
+    .our-projects .ed {
         position: absolute;
         bottom: -40px;
     }
 }
 
-
-
-.our-projects h2{
+.our-projects h2 {
     color: white;
     font-weight: 700;
 }
 
-.our-projects h2{
+.our-projects h2 {
     color: white;
     font-weight: 700;
 }
@@ -603,7 +678,5 @@ nav ul li {
     border-top: #5469C7 3px solid;
     width: 100%;
 }
-
-
 
 /* end our-projects */
