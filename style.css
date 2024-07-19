@@ -702,7 +702,7 @@ nav ul li {
     height: 100%;
     left: 110%;
     top: 0;
-    box-shadow: -20px 0px 118px 112px rgb(255, 255, 255);
+    box-shadow: -20px 0px 188px 182px rgb(255, 255, 255);
 }
 
 .slider .slid {
@@ -742,7 +742,7 @@ nav ul li {
     height: 100%;
     left: -10%;
     top: 0;
-    box-shadow: -20px 0px 118px 112px rgb(255, 255, 255);
+    box-shadow: -20px 0px 188px 182px rgb(255, 255, 255);
 }
 
 .slider-2 .slid-2 {
@@ -864,8 +864,6 @@ nav ul li {
     }
 
 }
-
-
 
 
 /* end our-clients */
