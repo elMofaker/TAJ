@@ -1,16 +1,19 @@
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-.blue{
+.blue {
     color: #273b92;
 }
 
-.black{
+.black {
     color: black;
+}
+
+.white {
+    color: white;
 }
 
 body {
@@ -39,10 +42,21 @@ a {
 
 
 nav {
-    background-color: rgba(0, 0, 0, 0.411);
-    backdrop-filter: blur(4px);
-    position: fixed;
+
     z-index: 1000;
+}
+
+.change-color {
+    background-color: transparent;
+    backdrop-filter: blut(0);
+    transition: .5s;
+}
+
+.scrolled {
+    background-color: rgba(0, 0, 0, 0.67);
+    backdrop-filter: blur(6px);
+    position: fixed;
+    transition: .5s;
 }
 
 .navbar-toggler {
@@ -305,7 +319,7 @@ nav ul li {
 
 .text-main h3 {
     font-size: 1.3rem;
-    font-weight: bold;  
+    font-weight: bold;
 }
 
 .approach .card {
@@ -324,6 +338,7 @@ nav ul li {
     width: 11%;
     border-top: 5px solid #273b92;
     opacity: 1;
+
 }
 
 .approach .card .borr {
@@ -331,3 +346,234 @@ nav ul li {
 }
 
 /* end approach */
+
+/* start services */
+.services {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.services hr {
+    border-top: #5469C7 3px solid;
+    width: 100%;
+}
+
+@media (max-width:767px) {
+    .services hr {
+        width: 25%;
+
+    }
+}
+
+.services .card hr {
+    width: 11%;
+    border-top: 5px solid #273b92;
+    opacity: .5;
+}
+
+
+.services .card h5 {
+    font-weight: 900;
+    font-size: 25px;
+}
+
+.services .back {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 80%;
+    height: 100%;
+    background-color: #273b92;
+    z-index: -1;
+}
+
+.services .content {
+    position: relative;
+    z-index: 1;
+    padding: 20px;
+    padding-bottom: 90px;
+}
+
+@media (max-width:400px) {
+    .services .content {
+        padding: 20px 0;
+    }
+}
+
+
+.services .card {
+    margin-bottom: 20px;
+    width: 25rem;
+}
+
+@media (max-width:400px) {
+
+    .services .card,
+    .soft-services .card {
+        width: 20rem;
+    }
+}
+
+
+
+.services .navigation-buttons {
+    position: absolute;
+    bottom: 10px;
+
+}
+
+@media (max-width:1102px) {
+
+    .services .navigation-buttons,
+    .soft-services .navigation-buttons {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
+@media (min-width:1102px) {
+    .services .navigation-buttons {
+        right: 40px;
+    }
+}
+
+.services .navigation-buttons button {
+    margin-left: 10px;
+    padding: 20px;
+    background-color: #EFEFEF;
+    border: 0;
+}
+
+.gallery {
+    width: 100%;
+    display: flex;
+    overflow-x: scroll;
+    padding: 0 20px;
+}
+
+@media (max-width:400px) {
+    .gallery {
+        padding: 0;
+    }
+
+    .content {
+        padding: 0;
+    }
+}
+
+
+.gallery::-webkit-scrollbar {
+    display: none;
+}
+
+.gallery .box {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 20px;
+    padding: 10px;
+    flex: none;
+}
+
+/* end services */
+/* start soft-services */
+.soft-services {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.soft-services .back {
+    position: absolute;
+    top: 0;
+    left: 20%;
+    width: 80%;
+    height: 100%;
+    background-color: #273b92;
+    z-index: -1;
+}
+
+.soft-services hr {
+    border-top: #5469C7 3px solid;
+    width: 100%;
+}
+
+.soft-services .navigation-buttons {
+    position: absolute;
+    bottom: 10px;
+}
+
+@media (min-width:1102px) {
+    .soft-services .navigation-buttons {
+        left: 0px;
+    }
+}
+
+.soft-services .navigation-buttons button {
+    margin-left: 10px;
+    padding: 20px;
+    background-color: #EFEFEF;
+    border: 0;
+}
+
+
+
+/* end soft-services */
+/* strat our-projects */
+
+.our-projects {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    background-image: url("img/image\ 28.png");
+}
+
+.back-color {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 19, 105, 0.611);
+}
+
+.container {
+    position: relative;
+}
+.our-projects p{
+    color: rgb(218, 206, 206);
+    font-weight: 500;
+    font-size: 12px;
+}
+
+
+
+.our-projects .btn-slid-main{
+    position: absolute;
+    bottom: 0;
+}
+
+.our-projects .in-card{
+    width: 50rem;
+}
+
+.our-projects .in-card img{
+    height: 100%;
+}
+
+.our-projects h2{
+    color: white;
+    font-weight: 700;
+}
+
+.our-projects h2{
+    color: white;
+    font-weight: 700;
+}
+
+.our-projects hr {
+    border-top: #5469C7 3px solid;
+    width: 100%;
+}
+/* end our-projects */
