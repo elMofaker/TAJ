@@ -63,7 +63,6 @@ nav {
     border: none;
 }
 
-
 .icon-nav {
     display: inline-block;
     width: 24px;
@@ -123,7 +122,6 @@ nav ul li {
     }
 }
 
-
 @media (max-width: 1200px) {
     nav ul {
         gap: .5rem;
@@ -141,6 +139,10 @@ nav ul li {
     position: relative;
     width: 100%;
     height: 100vh;
+}
+
+.carousel-indicators [data-bs-target] {
+    width: 17px;
 }
 
 .carousel-caption {
