@@ -18,7 +18,6 @@
 
 body {
     width: 100%;
-    height: 1000vh;
     font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
 }
@@ -36,11 +35,10 @@ ul {
 
 a {
     text-decoration: none;
+    cursor: pointer;
 }
 
 /* start nav */
-
-
 nav {
 
     z-index: 1000;
@@ -425,12 +423,21 @@ nav ul li {
 
 .services .navigation-buttons button {
     margin-left: 10px;
-    padding: 20px;
     background-color: #EFEFEF;
+    transition: background-color .3s ease;
     border: 0;
 }
 
-.gallery {
+.services .navigation-buttons button:active {
+    background-color: gray;
+}
+
+.services .navigation-buttons button img {
+    padding: 20px;
+}
+
+.gallery,
+.galleryTwo {
     width: 100%;
     display: flex;
     overflow-x: scroll;
@@ -438,7 +445,9 @@ nav ul li {
 }
 
 @media (max-width:400px) {
-    .gallery {
+
+    .gallery,
+    .galleryTwo {
         padding: 0;
     }
 
@@ -448,11 +457,13 @@ nav ul li {
 }
 
 
-.gallery::-webkit-scrollbar {
+.gallery::-webkit-scrollbar,
+.galleryTwo::-webkit-scrollbar {
     display: none;
 }
 
-.gallery .box {
+.gallery .box,
+.galleryTwo .box {
     width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
@@ -497,9 +508,17 @@ nav ul li {
 
 .soft-services .navigation-buttons button {
     margin-left: 10px;
-    padding: 20px;
     background-color: #EFEFEF;
+    transition: background-color .3s ease;
     border: 0;
+}
+
+.soft-services .navigation-buttons button:active {
+    background-color: gray;
+}
+
+.soft-services .navigation-buttons button img {
+    padding: 20px;
 }
 
 .soft-services .main-title h2 {
@@ -765,7 +784,7 @@ nav ul li {
     0% {
         transform: translateX(-100%);
     }
-    
+
     100% {
         transform: translateX(0);
     }
@@ -867,5 +886,11 @@ nav ul li {
 
 }
 
-
 /* end our-clients */
+
+/* start footer */
+footer a:hover {
+    font-weight: 500;
+}
+
+/* end footer */
