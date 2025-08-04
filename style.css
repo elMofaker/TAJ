@@ -240,6 +240,7 @@ nav ul li {
 .main-title h2 {
     font-size: 50px;
     font-weight: bold;
+
 }
 
 .main-title .dlle {
@@ -247,7 +248,7 @@ nav ul li {
 }
 
 .main-title span {
-    font-size: 55px;
+    font-size: 50px;
     font-weight: 900;
     background-color: #273b92;
     padding: 0;
@@ -257,6 +258,9 @@ nav ul li {
     justify-content: center;
     align-items: center;
     letter-spacing: 7px;
+    padding: 0px 10px;
+    border-radius: 5px;
+
 }
 
 @media (max-width: 767px) {
@@ -274,11 +278,11 @@ nav ul li {
 @media (max-width: 445px) {
 
     .about .main-title span {
-        font-size: 35px;
+        font-size: 25px;
     }
 
     .about .main-title h2 {
-        font-size: 35px;
+        font-size: 30px;
     }
 
 }
@@ -299,8 +303,8 @@ nav ul li {
 }
 
 .text-main {
-    border-left: 4px solid #273b92;
-    padding-left: 15px;
+    border-right: 4px solid #273b92;
+    padding-right: 15px;
 }
 
 .text-main h3 {
@@ -340,6 +344,10 @@ nav ul li {
     overflow: hidden;
 }
 
+.card-img-top {
+    border-radius: 8px;
+}
+
 .services hr {
     border-top: #5469C7 3px solid;
     width: 100%;
@@ -355,13 +363,25 @@ nav ul li {
     width: 11%;
     border-top: 5px solid #273b92;
     opacity: .5;
+
 }
+
+.card-body {
+    direction: rtl;
+}
+
 
 
 .services .card h5 {
     font-weight: 900;
     font-size: 25px;
+    text-align: start;
 }
+
+.services .card p {
+    text-align: start;
+}
+
 
 .services .back {
     position: absolute;
@@ -371,6 +391,7 @@ nav ul li {
     height: 100%;
     background-color: #273b92;
     z-index: -1;
+
 }
 
 .services .content {
@@ -378,6 +399,7 @@ nav ul li {
     z-index: 1;
     padding: 20px;
     padding-bottom: 90px;
+
 }
 
 @media (max-width:400px) {
@@ -389,14 +411,16 @@ nav ul li {
 
 .services .card {
     margin-bottom: 20px;
-    width: 25rem;
+    width: 20rem;
+    border-radius: 8px;
+
 }
 
 @media (max-width:400px) {
 
     .services .card,
     .soft-services .card {
-        width: 20rem;
+        width: 17rem;
     }
 }
 
@@ -889,8 +913,67 @@ nav ul li {
 /* end our-clients */
 
 /* start footer */
+
+footer {
+    background-color: #273b92;
+    color: white;
+    padding: 20px 0;
+    box-shadow: 1px 1px black;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    box-shadow: 0 0 24px -6px black;
+
+    img {
+        width: 150px;
+    }
+
+    hr {
+        width: 50%;
+        margin: 0 auto;
+        border-top: 3px solid #5469C7;
+        /* margin-bottom: 20px; */
+    }
+
+    ul {
+        li {
+            a {
+                color: white;
+            }
+        }
+    }
+}
+
 footer a:hover {
     font-weight: 500;
+
+
 }
 
 /* end footer */
+
+.whatsapp-fixed {
+    position: fixed;
+    left: 20px;
+    bottom: 20px;
+    z-index: 9999;
+    background: #25d366;
+    color: #fff;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    transition: background 0.2s;
+}
+
+.whatsapp-fixed:hover {
+    background: #128c7e;
+    color: #fff;
+}
+
+.whatsapp-fixed img {
+    width: 32px;
+    height: 32px;
+}
