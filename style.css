@@ -315,57 +315,10 @@ nav {
 /* end home */
 /* start about */
 
-/* === Start About Section Styles === */
-
-.about {
-    width: 100%;
-    background-color: #f9f9f9;
-}
-
-.about .text-main h3 {
-    font-size: 36px;
-    font-weight: bold;
-    border-right: 5px solid var(--red);
-    padding-right: 15px;
-    margin-bottom: 20px;
-}
-
-.about .about-text {
-    color: #000;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.9;
-    text-align: justify;
-}
-
-@media (max-width: 991px) {
-    .about .text-main h3 {
-        font-size: 28px;
-        border-right: 4px solid var(--red);
-        padding-right: 10px;
-        text-align: center;
-    }
-
-    .about .about-text {
-        text-align: right;
-    }
-}
-
-@media (max-width: 576px) {
-    .about .text-main h3 {
-        font-size: 24px;
-    }
-
-    .about .about-text {
-        font-size: 15px;
-        padding: 0 10px;
-    }
-}
-
-/* إذا كنت تستخدم .main-title أيضاً في هذا السكشن */
 .main-title h2 {
     font-size: 50px;
     font-weight: bold;
+
 }
 
 .main-title .dlle {
@@ -376,17 +329,20 @@ nav {
     font-size: 50px;
     font-weight: 900;
     background-color: var(--red);
-    padding: 0px 10px;
+    padding: 0;
     color: white;
     text-transform: uppercase;
     display: flex;
     justify-content: center;
     align-items: center;
     letter-spacing: 7px;
+    padding: 0px 10px;
     border-radius: 5px;
+
 }
 
 @media (max-width: 767px) {
+
     .main-title h2 {
         text-align: center;
     }
@@ -394,9 +350,11 @@ nav {
     .main-title .dlle {
         justify-content: center;
     }
+
 }
 
 @media (max-width: 445px) {
+
     .about .main-title span {
         font-size: 25px;
     }
@@ -404,9 +362,13 @@ nav {
     .about .main-title h2 {
         font-size: 30px;
     }
+
 }
 
-/* === End About Section Styles === */
+.about p {
+    color: black;
+    font-weight: 500;
+}
 
 
 /* end about */
@@ -452,7 +414,8 @@ nav {
 }
 
 /* end approach */
-/* === Start Services Section Styles === */
+
+/* start services */
 .services {
     position: relative;
     width: 100%;
@@ -461,9 +424,6 @@ nav {
 
 .card-img-top {
     border-radius: 8px;
-    width: 100%;
-    height: auto;
-    object-fit: cover;
 }
 
 .services hr {
@@ -471,7 +431,7 @@ nav {
     width: 100%;
 }
 
-@media (max-width: 767px) {
+@media (max-width:767px) {
     .services hr {
         width: 25%;
     }
@@ -480,55 +440,103 @@ nav {
 .services .card hr {
     width: 11%;
     border-top: 5px solid var(--red);
-    opacity: 0.5;
+    opacity: .5;
+
 }
 
 .card-body {
     direction: rtl;
 }
 
+
+
 .services .card h5 {
     font-weight: 900;
-    font-size: 22px;
+    font-size: 25px;
     text-align: start;
-    margin-bottom: 0.5rem;
 }
 
 .services .card p {
-    font-size: 15px;
     text-align: start;
-    line-height: 1.6;
 }
 
-/* ✅ تم ضبط عرض الكروت */
+
+.services .back {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 80%;
+    height: 100%;
+    background-color: var(--red);
+    z-index: -1;
+
+}
+
+.services .content {
+    position: relative;
+    z-index: 1;
+    padding: 20px;
+    padding-bottom: 90px;
+
+}
+
+@media (max-width:400px) {
+    .services .content {
+        padding: 20px 0;
+    }
+}
+
+
 .services .card {
-    width: 100%;
-    max-width: 350px;
     margin-bottom: 20px;
+    width: 20rem;
     border-radius: 8px;
+
 }
 
-@media (max-width: 400px) {
-    .services .card {
-        max-width: 300px;
-        padding: 10px;
-    }
+@media (max-width:400px) {
 
-    .services .container {
-        padding-left: 10px;
-        padding-right: 10px;
+    .services .card,
+    .soft-services .card {
+        width: 17rem;
     }
 }
 
-.services .col-lg-4,
-.services .col-md-6,
-.services .col-sm-12 {
-    display: flex;
-    justify-content: center;
+.services .navigation-buttons {
+    position: absolute;
+    bottom: 10px;
+
 }
 
-/* === End Services Section Styles === */
+@media (max-width:1102px) {
 
+    .services .navigation-buttons,
+    .soft-services .navigation-buttons {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
+@media (min-width:1102px) {
+    .services .navigation-buttons {
+        right: 40px;
+    }
+}
+
+.services .navigation-buttons button {
+    margin-left: 10px;
+    background-color: #EFEFEF;
+    transition: background-color .3s ease;
+    border: 0;
+}
+
+.services .navigation-buttons button:active {
+    background-color: gray;
+}
+
+.services .navigation-buttons button img {
+    padding: 20px;
+}
 
 .gallery,
 .galleryTwo {
@@ -567,6 +575,151 @@ nav {
 }
 
 /* end services */
+/* start soft-services */
+.soft-services {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.soft-services .back {
+    position: absolute;
+    top: 0;
+    left: 20%;
+    width: 80%;
+    height: 100%;
+    background-color: var(--red);
+    z-index: -1;
+}
+
+.soft-services hr {
+    border-top: var(--red-opas) 3px solid;
+    width: 100%;
+}
+
+.soft-services .navigation-buttons {
+    position: absolute;
+    bottom: 10px;
+}
+
+@media (min-width:1102px) {
+    .soft-services .navigation-buttons {
+        left: 0px;
+    }
+}
+
+.soft-services .navigation-buttons button {
+    margin-left: 10px;
+    background-color: #EFEFEF;
+    transition: background-color .3s ease;
+    border: 0;
+}
+
+.soft-services .navigation-buttons button:active {
+    background-color: gray;
+}
+
+.soft-services .navigation-buttons button img {
+    padding: 20px;
+}
+
+.soft-services .main-title h2 {
+    font-size: 50px;
+    font-weight: bold;
+    letter-spacing: 15px;
+}
+
+.soft-services .main-title .dlle {
+    justify-content: start;
+}
+
+.soft-services .main-title span {
+    font-size: 55px;
+    font-weight: 900;
+    background-color: var(--red);
+    padding: 0;
+    color: white;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 0px;
+}
+
+@media (max-width: 400px) {
+
+    .soft-services .main-title h2 {
+        font-size: 33px;
+        letter-spacing: 0px;
+    }
+
+    .soft-services .main-title span {
+        font-size: 23px;
+    }
+
+    .soft-services .main-title .dlle {
+        justify-content: center;
+        text-align: center;
+    }
+
+}
+
+@media (max-width: 527px) and (min-width:400px) {
+
+    .soft-services .main-title h2 {
+        font-size: 35px;
+        letter-spacing: 4px;
+    }
+
+    .soft-services .main-title span {
+        font-size: 30px;
+    }
+
+    .soft-services .main-title .dlle {
+        justify-content: center;
+        text-align: center;
+    }
+
+}
+
+@media (max-width: 767px) and (min-width:526px) {
+
+    .soft-services .main-title h2 {
+        font-size: 37px;
+        letter-spacing: 5px;
+    }
+
+    .soft-services .main-title span {
+        font-size: 33px;
+    }
+
+    .soft-services .main-title .dlle {
+        justify-content: center;
+        text-align: center;
+    }
+
+}
+
+@media (max-width: 992px) and (min-width:766px) {
+
+    .soft-services .main-title h2 {
+        font-size: 45px;
+        letter-spacing: 7px;
+
+    }
+
+    .soft-services .main-title span {
+        font-size: 40px;
+    }
+
+    .soft-services .main-title .dlle {
+        justify-content: center;
+        text-align: center;
+    }
+
+}
+
+/* end soft-services */
 /* strat our-projects */
 
 .our-projects {
