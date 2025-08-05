@@ -1,3 +1,8 @@
+:root{
+    --red: #791111;
+    --red-opas: #791111;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -5,7 +10,7 @@
 }
 
 .blue {
-    color: #273b92;
+    color: var(--red);
 }
 
 .black {
@@ -143,6 +148,8 @@ nav ul li {
     width: 100%;
     height: 100vh;
     box-shadow: 12px 3px 37px -5px black;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 21px;
 }
 
 .carousel-indicators [data-bs-target] {
@@ -181,7 +188,8 @@ nav ul li {
     .carousel-caption h5 {
         font-size: 30px;
     }
-        .carousel-caption p {
+
+    .carousel-caption p {
         font-size: 20px;
     }
 
@@ -189,7 +197,7 @@ nav ul li {
 
 .btn-slid-main {
     padding: 15px;
-    background-color: #273b92;
+    background-color: var(--red);
     color: white;
     width: 13rem;
     display: flex;
@@ -239,7 +247,7 @@ nav ul li {
     height: 100%;
     top: 0;
     left: 0;
-    background: linear-gradient(to bottom, rgba(0, 0, 111, 0.534), #000000db);
+    background: linear-gradient(to bottom, rgb(0 0 0 / 36%), #000000db);
     z-index: 1;
 }
 
@@ -270,7 +278,7 @@ nav ul li {
 .main-title span {
     font-size: 50px;
     font-weight: 900;
-    background-color: #273b92;
+    background-color: var(--red);
     padding: 0;
     color: white;
     text-transform: uppercase;
@@ -323,7 +331,7 @@ nav ul li {
 }
 
 .text-main {
-    border-right: 4px solid #273b92;
+    border-right: 4px solid var(--red);
     padding-right: 15px;
 }
 
@@ -346,7 +354,7 @@ nav ul li {
 
 .approach .card hr {
     width: 11%;
-    border-top: 5px solid #273b92;
+    border-top: 5px solid var(--red);
     opacity: 1;
 
 }
@@ -369,7 +377,7 @@ nav ul li {
 }
 
 .services hr {
-    border-top: #5469C7 3px solid;
+    border-top: var(--red-opas) 3px solid;
     width: 100%;
 }
 
@@ -381,7 +389,7 @@ nav ul li {
 
 .services .card hr {
     width: 11%;
-    border-top: 5px solid #273b92;
+    border-top: 5px solid var(--red);
     opacity: .5;
 
 }
@@ -409,7 +417,7 @@ nav ul li {
     left: 0;
     width: 80%;
     height: 100%;
-    background-color: #273b92;
+    background-color: var(--red);
     z-index: -1;
 
 }
@@ -530,12 +538,12 @@ nav ul li {
     left: 20%;
     width: 80%;
     height: 100%;
-    background-color: #273b92;
+    background-color: var(--red);
     z-index: -1;
 }
 
 .soft-services hr {
-    border-top: #5469C7 3px solid;
+    border-top: var(--red-opas) 3px solid;
     width: 100%;
 }
 
@@ -578,7 +586,7 @@ nav ul li {
 .soft-services .main-title span {
     font-size: 55px;
     font-weight: 900;
-    background-color: #273b92;
+    background-color: var(--red);
     padding: 0;
     color: white;
     text-transform: uppercase;
@@ -742,14 +750,14 @@ nav ul li {
 }
 
 .our-projects hr {
-    border-top: #5469C7 3px solid;
+    border-top: var(--red-opas) 3px solid;
     width: 100%;
 }
 
 /* end our-projects */
 /* start our-clients */
 .our-clients hr {
-    border-top: #5469C7 3px solid;
+    border-top: var(--red-opas) 3px solid;
     width: 100%;
 
 }
@@ -847,7 +855,7 @@ nav ul li {
 .our-clients .main-title span {
     font-size: 55px;
     font-weight: 900;
-    background-color: #273b92;
+    background-color: var(--red);
     padding: 0;
     color: white;
     text-transform: uppercase;
@@ -935,7 +943,7 @@ nav ul li {
 /* start footer */
 
 footer {
-    background-color: #273b92;
+    background-color: var(--red);
     color: white;
     padding: 20px 0;
     box-shadow: 1px 1px black;
@@ -950,7 +958,7 @@ footer {
     hr {
         width: 50%;
         margin: 0 auto;
-        border-top: 3px solid #5469C7;
+        border-top: 3px solid #fdfdfd;
         /* margin-bottom: 20px; */
     }
 
@@ -974,7 +982,7 @@ footer a:hover {
 .whatsapp-fixed {
     position: fixed;
     left: 20px;
-    bottom: 20px;
+    bottom: 60px;
     z-index: 9999;
     background: #25d366;
     color: #fff;
