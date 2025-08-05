@@ -23,38 +23,38 @@
 <body>
 
     <!-- start nav -->
-    <nav class="change-color navbar navbar-expand-lg w-100 pt-3 pb-3 ps-2 pe-2" style="position: fixed;">
-        <div class="container">
-            <a class="navbar-brand justify-content-center align-items-center top">
-                <img src="/img/logo-asfore-main.png" alt="img" style="width: 60px;">
-            </a>
-            <button style="box-shadow: none;" class="navbar-toggler top" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="icon-nav"></span>
-            </button>
-            <div class="collapse navbar-collapse " id="navbarSupportedContent">
-                <div class="navbar-nav justify-content-between align-items-center w-100 mb-2 mb-lg-0">
-                    <a class="logo justify-content-center align-items-center top" href="#">
-                        <img src="img/logo-asfore.png" width="90px" alt="">
-                    </a>
-                    <ul class="navbar-nav mb-2 py-3 px-3 mb-lg-0">
+    <nav class="change-color navbar navbar-expand-lg w-100 pt-3 pb-3 ps-2 pe-2 fixed-top">
+  <div class="container d-flex justify-content-between align-items-center">
+    
+    <!-- شعار الموقع (ثابت في اليسار دائمًا) -->
+    <a class="navbar-brand" href="#">
+      <img src="img/logo-asfore-main.png" width="90" alt="logo">
+    </a>
 
-                        <li class="nav-item top">
-                            <a class="nav-link" aria-current="page" href="#About">من نحن</a>
-                        </li>
-                        <li class="nav-item top">
-                            <a class="nav-link" aria-current="page" href="#services">خدماتنا</a>
-                        </li>
-                        <li class="nav-item top">
-                            <a class="nav-link" aria-current="page" href="#OUR-clients">شركاء النجاح</a>
-                        </li>
-                    </ul>
+    <!-- زر القائمة للهاتف -->
+    <button style="box-shadow: none;" class="navbar-toggler" type="button" data-bs-toggle="collapse"
+      data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+      aria-label="Toggle navigation">
+      <span class="icon-nav"></span>
+    </button>
 
-                </div>
-            </div>
-        </div>
-    </nav>
+    <!-- عناصر التنقل -->
+    <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+      <ul class="navbar-nav mb-2 mb-lg-0 align-items-center text-center">
+        <li class="nav-item">
+          <a class="nav-link" href="#About">من نحن</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#services">خدماتنا</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#OUR-clients">شركاء النجاح</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
     <!-- end nav -->
     <!-- start home -->
     <div id="Home" class="home pb-5">
@@ -320,7 +320,7 @@
 
         <hr class="top">
 
-        <ul class="d-lg-flex  justify-content-center align-items-center gap-3 py-2 ">
+        <ul class="d-lg-flex  justify-content-center align-items-center gap-3 py-2  px-0">
             <li class="pt-3 top">
                 <a class="" href="#About">من نحن</a>
             </li>
@@ -334,7 +334,7 @@
 
         <hr class="top">
 
-        <ul class="d-lg-flex  justify-content-center align-items-center gap-3 py-2">
+        <ul class="d-lg-flex  justify-content-center align-items-center gap-3 py-2 px-0">
             <li class="pt-3 top">
                 <a href="mailto:info@asfour-engineering.com">info@asfour-engineering.com</a>
             </li>
@@ -349,7 +349,7 @@
         <hr class="top">
 
 
-        <div style="margin-top: 20px; font-size: 16px; color: rgb(187, 187, 187);">
+        <div class="px-0" style="margin-top: 20px; font-size: 16px; color: rgb(187, 187, 187);">
             &copy; جميع الحقوق محفوظة
             <a href="https://youssef-el-fadaly.vercel.app/" target="_blank"
                 style="color: rgb(187, 187, 187); text-decoration: none; text-decoration: underline;">Youssef EL

@@ -1,4 +1,4 @@
-:root{
+:root {
     --red: #791111;
     --red-opas: #791111;
 }
@@ -103,13 +103,7 @@ nav ul li {
 }
 
 @media (max-width:992px) {
-    .navbar-brand {
-        display: flex;
-    }
 
-    /* .logo {
-        display: none;
-    } */
 
     nav ul {
         backdrop-filter: blur(5px);
@@ -120,15 +114,6 @@ nav ul li {
     }
 }
 
-@media (min-width:992px) {
-    /* .navbar-brand {
-        display: none;
-    } */
-
-    .logo {
-        display: flex;
-    }
-}
 
 @media (max-width: 1200px) {
     nav ul {
@@ -137,6 +122,62 @@ nav ul li {
 
     .nav-link {
         font-size: 13px;
+    }
+}
+
+nav {
+    z-index: 1000;
+}
+
+.change-color {
+    background-color: transparent;
+    backdrop-filter: blur(0);
+    transition: 0.5s;
+}
+
+.scrolled {
+    background-color: rgba(0, 0, 0, 0.67);
+    backdrop-filter: blur(6px);
+    transition: 0.5s;
+}
+
+.navbar-toggler {
+    border: none;
+}
+
+.icon-nav {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background-image: url('img/f0d92e1487bc41b6de713af62c497c3e.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    transition: transform 0.3s ease;
+    transform: rotate(-180deg);
+}
+
+.navbar-toggler.collapsed .icon-nav {
+    transform: rotate(-90deg);
+}
+
+.navbar-nav {
+    gap: 1.5rem;
+}
+
+.nav-link {
+    font-size: 13px;
+    color: white;
+    font-weight: 700;
+}
+
+@media (max-width: 992px) {
+    .navbar-nav {
+        flex-direction: column;
+        backdrop-filter: blur(5px);
+        border-radius: 20px;
+        margin-top: 10px;
+        padding: 20px;
+        background-color: rgba(0, 0, 0, 0.659);
     }
 }
 
@@ -149,7 +190,7 @@ nav ul li {
     height: 100vh;
     box-shadow: 12px 3px 37px -5px black;
     border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 21px;
+    border-bottom-right-radius: 20px;
 }
 
 .carousel-indicators [data-bs-target] {
@@ -222,6 +263,8 @@ nav ul li {
     height: 50px;
     margin-left: auto;
     margin-right: auto;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
 }
 
 .btn-slid {
@@ -240,6 +283,11 @@ nav ul li {
     padding: 10px;
 }
 
+.carousel-inner{
+        border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
 .carousel-inner::before {
     content: "";
     position: absolute;
@@ -249,6 +297,8 @@ nav ul li {
     left: 0;
     background: linear-gradient(to bottom, rgb(0 0 0 / 36%), #000000db);
     z-index: 1;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
 }
 
 @media (max-width: 992px) {
